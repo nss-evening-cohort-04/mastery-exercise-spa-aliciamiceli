@@ -1,0 +1,25 @@
+{
+  "cars": [
+    {
+      "make": "Cadillac",
+      "model": "ATS",
+      "year": "2015",
+      "price": "36988",
+      "description": "This was a company show car. It has the luxury package."
+    },
+    {
+      "make": "Cadillac",
+      "model": "SRX",
+      "year": "2014",
+      "price": "37988",
+      "description": "This SRX is Cadillac-certified premium collection. It has power everything."
+    },
+   {
+      "make": "Cadillac",
+      "model": "SRX",
+      "year": "2011",
+      "price": "15988",
+      "description": "This SRX is part of the luxury collection. It has smooth transitional shifting."
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+var activateEvents = (function (){
+
+})(CarLot || {}));
