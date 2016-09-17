@@ -1,0 +1,22 @@
+body {
+  background-color: #E2EFDE;
+}
+
+.col-md-4 {
+  border: 1px solid black;
+  margin-top: 3%;
+  background-color: #BFD1E5;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  background-color: #E2EFDE;
+  width: 100%;
+}
+
+.activeClick {
+border: 6px solid black;
+background-color: #4D5057;
+font-color: white;
+}

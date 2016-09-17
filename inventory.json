@@ -1,25 +1,36 @@
 {
   "cars": [
     {
+      "id": "1",
       "make": "Cadillac",
       "model": "ATS",
       "year": "2015",
-      "price": "36988",
-      "description": "This was a company show car. It has the luxury package."
+      "price": "36,988",
+      "description": "This was a company show car. It has the luxury package. This is the one you need!"
     },
     {
+      "id": "2",
       "make": "Cadillac",
       "model": "SRX",
       "year": "2014",
-      "price": "37988",
-      "description": "This SRX is Cadillac-certified premium collection. It has power everything."
+      "price": "37,988",
+      "description": "Premium SRX is Cadillac-certified premium collection. It has power everything."
     },
    {
+      "id": "3",
       "make": "Cadillac",
       "model": "SRX",
       "year": "2011",
-      "price": "15988",
-      "description": "This SRX is part of the luxury collection. It has smooth transitional shifting."
+      "price": "15,988",
+      "description": "Amazing SRX is part of the luxury collection. It has smooth transitional shifting."
+    },
+    {
+      "id": "4",
+      "make": "Cadillac",
+      "model": "SRX",
+      "year": "2017",
+      "price": "40,988",
+      "description": "Fun-loving SRX is brand new, organically grown in a field of baby Cadillacs."
     }
   ]
 }
