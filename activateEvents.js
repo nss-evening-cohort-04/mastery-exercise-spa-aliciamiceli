@@ -1,16 +1,27 @@
-var activateEvents = (function (){
+var CarLot = (function (newCarLot){
 
-var input = document.getElementById("input")
+console.log("newCarLot", newCarLot);
 
-var thisIsATest = new XMLHttpRequest();
-thisIsATest.open('GET', 'inventory.json')
-thisIsATest.send();
-thisIsATest.addEventListener('load', runEventHandlerFunction)
+  var descriptionVar = "";
+    addASpecificEventListenerToASpecificCard = function(){
+    for (var i = 0; i < 4; i++) {
+      var el = document.getElementById(`carCard${i}`)
+      var descriptionVar = document.getElementById(`description${i}`)
+      el.addEventListener('click', clickOnTheCar);
 
-function runEventHandlerFunction() {
-//i barely got this running the way it is - much less with three iifes
-}
+        function clickOnTheCar(e) {
+          e.currentTarget.classList.toggle('col-md-4')
+          e.currentTarget.classList.toggle("activeClick")
+          input.value = "";
+          input.focus();
+          input.addEventListener('keypress', function(){
 
-return activateEvents;
+            descriptionVar.innerHTML = input.value;
+            })
+          }
+        }
+      };
+
+  return newCarLot;
 
 })(CarLot || {});

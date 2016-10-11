@@ -8,13 +8,23 @@ request.send();
 request.addEventListener('load', getInventory)
 
 
-return getInventory;
-})();
 
 function getInventory() {
   inventory = JSON.parse(this.responseText).cars;
   parseToDom(inventory);
+  addASpecificEventListenerToASpecificCard();
+  //add event listeners
 }
+// return{
+//   getInventory: function(){
+//   inventory = JSON.parse(this.responseText).cars;
+//   parseToDom(inventory);
+//   },
+//   action2: function(){
+//     //do more
+//   }
+// }
+
 
 var currentCar;
 
@@ -34,28 +44,30 @@ function parseToDom(inventory) {
     newDiv.innerHTML = parseCarsToDom;
 
     document.getElementById('container').appendChild(newDiv);
-    addASpecificEventListenerToASpecificCard();
+    //console.log("carLot", addASpecificEventListenerToASpecificCard());
+    //newCarLot();
+    //console.log("newCarLot", newCarLot);
 
-var descriptionVar = "";
-  function addASpecificEventListenerToASpecificCard() {
-    var el = document.getElementById(`carCard${i}`)
-    var descriptionVar = document.getElementById(`description${i}`)
-    document.getElementById(`carCard${i}`).addEventListener('click', clickOnTheCar);
+  // var descriptionVar = "";
+  //   function addASpecificEventListenerToASpecificCard() {
+  //     var el = document.getElementById(`carCard${i}`)
+  //     var descriptionVar = document.getElementById(`description${i}`)
+  //     document.getElementById(`carCard${i}`).addEventListener('click', clickOnTheCar);
 
-      function clickOnTheCar() {
-        el.classList.toggle('col-md-4')
-        el.classList.toggle("activeClick")
-        input.value = "";
-        input.focus();
-        input.addEventListener('keypress', function(e){
+  //       function clickOnTheCar() {
+  //         el.classList.toggle('col-md-4')
+  //         el.classList.toggle("activeClick")
+  //         input.value = "";
+  //         input.focus();
+  //         input.addEventListener('keypress', function(){
 
-          var key = e.which || e.keyCode;
-          if (key === 13) {
-          e.preventDefault();
-          descriptionVar.innerHTML = descriptionVar.innerHTML +' ' + input.value;
-          }
-        })
+  //           descriptionVar.innerHTML = input.value;
+  //         })
+  //       }
       }
     }
-  }
-};
+
+return getInventory;
+})();
+
+
