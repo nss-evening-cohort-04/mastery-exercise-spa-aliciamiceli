@@ -1,6 +1,8 @@
-var CarLot = (function (newCarLot){
+ var CarLot = (function (newCarLot){
 
 console.log("newCarLot", newCarLot);
+
+
 
   var descriptionVar = "";
     addASpecificEventListenerToASpecificCard = function(){
