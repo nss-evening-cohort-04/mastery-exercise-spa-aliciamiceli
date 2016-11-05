@@ -1,28 +1,27 @@
  var CarLot = (function (newCarLot){
 
-console.log("newCarLot", newCarLot);
+ console.log("newCarLot", newCarLot);
 
 
-
-  var descriptionVar = "";
-    addASpecificEventListenerToASpecificCard = function(){
+var descriptionVar = "";
+   newCarLot.addASpecificEventListenerToASpecificCard = function() {
     for (var i = 0; i < 4; i++) {
-      var el = document.getElementById(`carCard${i}`)
-      var descriptionVar = document.getElementById(`description${i}`)
-      el.addEventListener('click', clickOnTheCar);
+     var el = document.getElementById(`carCard${i}`)
+     var descriptionVar = document.getElementById(`description${i}`)
+    document.getElementById(`carCard${i}`).addEventListener('click', clickOnTheCar);
 
-        function clickOnTheCar(e) {
-          e.currentTarget.classList.toggle('col-md-4')
-          e.currentTarget.classList.toggle("activeClick")
-          input.value = "";
-          input.focus();
-          input.addEventListener('keypress', function(){
-
-            descriptionVar.innerHTML = input.value;
-            })
-          }
-        }
-      };
+       function clickOnTheCar() {
+         this.classList.toggle('col-md-4')
+         this.classList.toggle("activeClick")
+         input.value = "";
+         input.focus();
+         newDescriptor = this.lastChild;
+         input.addEventListener('keypress', function(){
+          newDescriptor.innerHTML = input.value;
+        })
+      }
+    }
+ }
 
   return newCarLot;
 

@@ -1,6 +1,7 @@
 var CarLot = (function(oldCarLot){
 
-//fix this
+console.log("passing to an augmenter?", CarLot);
+
 var inventory = [];
 
 var currentCar;
@@ -27,7 +28,7 @@ oldCarLot.parseToDom = function (inventory) {
 oldCarLot.getInventory = function () {
   inventory = JSON.parse(this.responseText).cars;
   oldCarLot.parseToDom(inventory);
-  addASpecificEventListenerToASpecificCard();
+  CarLot.addASpecificEventListenerToASpecificCard();
 }
 
 
@@ -39,5 +40,5 @@ request.addEventListener('load', oldCarLot.getInventory)
 
 
 
-return oldCarLot.getInventory;
+return oldCarLot;
 })(CarLot || {});
